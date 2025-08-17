@@ -177,7 +177,7 @@ while True:
 
 from pydub import AudioSegment
 
-                # Specify the path to ffmpeg
+# Specify the path to ffmpeg
 AudioSegment.converter = r"C:/Users/LOHITH\Downloads/Object Detector/Object Detector/ffmpeg.exe"
 AudioSegment.ffprobe   = r"C:/Users/LOHITH\Downloads/Object Detector/Object Detector/ffprobe.exe"
 
@@ -189,3 +189,4 @@ subprocess.call(["ffplay", "-nodisp", "-autoexit", "tts.mp3"])
 cap.release()
 cv2.destroyAllWindows()
 os.remove("tts.mp3")
+
