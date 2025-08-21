@@ -132,8 +132,9 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Release video capture and close windows..
+# Release video capture and close windows
 cap.release()
 cv2.destroyAllWindows()
+
 
 
