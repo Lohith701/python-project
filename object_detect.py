@@ -11,7 +11,7 @@ from pydub import AudioSegment
 AudioSegment.converter = r"C:/Users/LOHITH/Downloads/Object Detector/Object Detector/ffprobe.exe"
 AudioSegment.ffprobe   = r"C:/Users/LOHITH/Downloads/Object Detector/Object Detector/ffprobe.exe"
 
-
+#here we have used weights
 # load the COCO class labels our YOLO model was trained on
 LABELS = open("C:/Users/LOHITH/Downloads/Object Detector/Object Detector/coco.names").read().strip().split("\n")
 with open("C:/Users/LOHITH/Downloads/Object Detector/Object Detector/coco.names", "r") as f:
@@ -189,4 +189,5 @@ subprocess.call(["ffplay", "-nodisp", "-autoexit", "tts.mp3"])
 cap.release()
 cv2.destroyAllWindows()
 os.remove("tts.mp3")
+
 
