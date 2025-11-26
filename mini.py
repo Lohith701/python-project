@@ -9,7 +9,7 @@ import os
 from gtts import gTTS
 from pydub import AudioSegment
 
-# Initialize pygame mixer for playing sound
+# Initialize pygame mixer for playing sounds
 pygame.mixer.init()
 
 # Load the cascade for face detection
@@ -135,6 +135,7 @@ while True:
 # Release video capture and close windows
 cap.release()
 cv2.destroyAllWindows()
+
 
 
 
